@@ -95,3 +95,9 @@ h1 {
     animation:fade 3000ms infinite;
     -webkit-animation:fade 3000ms infinite;
 }
+
+.obiekt{
+    top : 0;
+    left : 0;
+    position : relative;
+}

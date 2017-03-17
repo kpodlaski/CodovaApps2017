@@ -1,30 +1,32 @@
-﻿// For an introduction to the Blank template, see the following documentation:
-// http://go.microsoft.com/fwlink/?LinkID=397704
-// To debug code on page load in Ripple or on Android devices/emulators: launch your app, set breakpoints, 
-// and then run "window.location.reload()" in the JavaScript Console.
-(function () {
-    "use strict";
+﻿$(document).ready(function () {
+    $('#content').html("Ala ma kota");
+    var htmlek = $('#content').html();
+    $('#content').html(htmlek + " <b> AAA</b>");
+    var size = 15;
 
-    document.addEventListener( 'deviceready', onDeviceReady.bind( this ), false );
+    for (i = 0; i < size; i++) {
+        var act = $('#buttony').html();
+        $('#buttony').html(act +
+            "<button id='button"
+            + i +
+            "' onclick='kliknieto()' >"
+            + i +
+            "</button>");
+    }
 
-    function onDeviceReady() {
-        // Handle the Cordova pause and resume events
-        document.addEventListener( 'pause', onPause.bind( this ), false );
-        document.addEventListener( 'resume', onResume.bind( this ), false );
-        
-        // TODO: Cordova has been loaded. Perform any initialization that requires Cordova here.
-        var parentElement = document.getElementById('deviceready');
-        var listeningElement = parentElement.querySelector('.listening');
-        var receivedElement = parentElement.querySelector('.received');
-        listeningElement.setAttribute('style', 'display:none;');
-        receivedElement.setAttribute('style', 'display:block;');
-    };
+    $("#my-btn").click(klik2);
+});
 
-    function onPause() {
-        // TODO: This application has been suspended. Save application state here.
-    };
+function kliknieto() {
+    //SOLVE FOR FIREFOX ??
+    alert(event.srcElement.id);
+    $("#" + event.srcElement.id).hide();
+}
 
-    function onResume() {
-        // TODO: This application has been reactivated. Restore application state here.
-    };
-} )();
+var toppos = 30;
+
+function klik2() {
+    //przesuń $("#my-btn") do góry/dołu o 20 px;
+    toppos -= 30;
+    $("#my-btn").css({'position' : 'absolute', 'top': toppos+'px' });
+}

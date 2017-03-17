@@ -1,0 +1,3 @@
+https://teamtreehouse.com/community/how-to-achieve-this
+https://css-tricks.com/snippets/css/css-triangle/
+https://css-tricks.com/examples/ShapesOfCSS/

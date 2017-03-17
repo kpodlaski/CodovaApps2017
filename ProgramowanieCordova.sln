@@ -5,6 +5,11 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{262852C6-CD72-467D-83FE-5EEB1973A190}") = "HtmlJavaSciptEx", "HtmlJavaSciptEx\HtmlJavaSciptEx.jsproj", "{100C734C-AFFD-494C-92B6-336F22491B90}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{32083F78-882D-498F-9ED2-7F01471547E6}"
+	ProjectSection(SolutionItems) = preProject
+		PrzydatneLinki.txt = PrzydatneLinki.txt
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Android = Debug|Android
