@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
-    <link href="css/ui-example.css" rel="stylesheet" /><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link href="css/ui-example.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="scripts/SimpleUI.js"></script>
 </head>
 <body>
     
@@ -22,31 +24,34 @@
                 <span class="icon-bar"></span>
             </button>
 
-            <a class="navbar-brand" href="#"><img src="http://www.uni.lodz.pl/images/Logo_kolor.svg" height="30" /></a>
+            <a class="navbar-brand" href="#">
+            <img src="http://www.uni.lodz.pl/images/Logo_kolor.svg" height="30" /></a>
         </div>
 
         <div class="collapse navbar-collapse" id="example-navbar-collapse">
 
             <ul class="nav navbar-nav">
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                        Sekcja 1
-                        <b class="caret"></b>
-                    </a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" >
+                            <div onclick="showContent('1','-1')">Sekcja 1</div>
+                            
+                            <b class="caret"></b>
+                        </a>
                     <ul class="dropdown-menu">
-                        <li><a href="#">Seccja 1.a</a></li>
-                        <li><a href="#">Sekcja 1.b</a></li>
+                        <li><a  onclick="showContent('1', 'a')">Sekcja 1.a</a></li>
+                        <li><a href="#" onclick="showContent('1', 'b')">Sekcja 1.b</a></li>
                     </ul>
                 </li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                        Sekcja 2
-                        <b class="caret"></b>
-                    </a>
+                        <div onclick="showContent('2','-1')">
+                            Sekcja 2</div>
+                            <b class="caret"></b>
+</a>
                     <ul class="dropdown-menu">
-                        <li><a href="#">Seccja 2.a</a></li>
-                        <li><a href="#">Sekcja 2.b</a></li>
-                        <li><a href="#">Sekcja 2.c</a></li>
+                        <li><a href="#" onclick="showContent('2', 'a')">Seccja 2.a</a></li>
+                        <li><a href="#" onclick="showContent('2', 'b')">Sekcja 2.b</a></li>
+                        <li><a href="#" onclick="showContent('2', 'c')">Sekcja 2.c</a></li>
                     </ul>
                 </li>
 
@@ -59,8 +64,10 @@
             <h3>
                 <div class="blue"><span class="glyphicon glyphicon-piggy-bank"></span> Main Text</div>   
             </h3>
-            <div id="main_container" class="img_container" style="background-color: burlywood;"></div>
+            <div id="main_container" class="img_container" style="background-color: burlywood;">
+            </div>
             <div id="sub_container" class="img_container" style="background-color: gainsboro;"></div>
+            
         </div>
         <div id="footer" >@Copyrights</div>
     </div>

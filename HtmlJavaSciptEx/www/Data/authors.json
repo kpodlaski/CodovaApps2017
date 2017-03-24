@@ -1,0 +1,38 @@
+﻿[
+  {
+    "Id": 1,
+    "Name": "Cyprian Kamil",
+    "Surname": "Norwid",
+    "Sname": "C. Norwid"
+  },
+  {
+    "Id": 2,
+    "Name": "Eliza",
+    "Surname": "Orzeszkowa",
+    "Sname": "E. Orzeszkowa"
+  },
+  {
+    "Id": 3,
+    "Name": "Juliusz",
+    "Surname": "Słowacki",
+    "Sname": "J. Słowacki"
+  },
+  {
+    "Id": 4,
+    "Name": "Maria",
+    "Surname": "Konopnicka",
+    "Sname": "M. Konopnicka"
+  },
+  {
+    "Id": 5,
+    "Name": "Adam",
+    "Surname": "Mickiewicz",
+    "Sname": "A. Mickiewicz"
+  },
+  {
+    "Id": 6,
+    "Name": "Adam",
+    "Surname": "Mickiewicz",
+    "Sname": "A. Mickiewicz"
+  }
+]

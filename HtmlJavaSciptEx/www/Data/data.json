@@ -1,0 +1,30 @@
+﻿{
+  "Sekcja1": {
+    "main": "MAIN CONTENT 1",
+    "subsec":
+      {
+        "a": {
+          "content": "CONTENT 1.a"
+        },
+        "b": {
+          "content": "CONTENT 1.b"
+        }
+      }
+  },
+  "Sekcja2": {
+    "main": "MAIN CONTENT 2",
+    "subsec":
+      {
+        "a": {
+          "content": "CONTENT 2.a"
+        },
+        "b": {
+          "content": "CONTENT 2.b"
+        },
+        "c": {
+          "content": "CONTENT 2.c"
+        }
+      } 
+  }
+
+}
