@@ -19,7 +19,6 @@ function repaint() {
 function move(x) {
     context.clearRect(centerX - radius - 5, centerY - radius - 5, 2 * radius + 10, 2 * radius + 10);
     centerX += x;
-    repaint();
 }
 
 function moveLeft() {
@@ -37,7 +36,8 @@ function animation() {
     if (centerX > canvas.width * .8 || 
         centerX < canvas.width * .2)
             direction = direction * (-1);
-    move(10 * direction);
+    //move(10 * direction);
+    repaint();
 }
 
 function stopAnimation() {
@@ -45,7 +45,7 @@ function stopAnimation() {
 }
 
 function startAnimation() {
-    interval = setInterval(animation, 10);
+    interval = setInterval(animation, 1);
 }
 
 function accelerometerSuccess(acceleration) {
@@ -53,6 +53,7 @@ function accelerometerSuccess(acceleration) {
     $("#AccX").val( acceleration.x);
     $("#AccY").val(acceleration.y);
     $("#AccZ").val(acceleration.z);
+    move(3*acceleration.x);
 }
 
 function accelerometerError() {

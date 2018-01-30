@@ -22,14 +22,18 @@ function post() {
     $.ajax({
         url: 'http://kprestap.azurewebsites.net/api/Authors/',
         type: 'POST',
-        data: nobiekt,
+        data: JSON.stringify(nobiekt),
+        dataType: "json",
+		contentType: "application/json; charset=utf-8",
         success: function (_data) {
             //called when successful
             alert(JSON.stringify(_data));
         },
         error: function (e) {
             //called when there is an error
-            alert(e.message);
+            alert(JSON.stringify(e));
         }
     });
+	
+
 }

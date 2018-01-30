@@ -1,7 +1,17 @@
 {
-    "name": "HtmlJavaSciptEx",
-    "version": "1.0.0",
-    "private": true,
-    "dependencies": {
-    }
+  "name": "HtmlJavaSciptEx",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "cordova-android": "^7.0.0",
+    "cordova-plugin-whitelist": "1"
+  },
+  "cordova": {
+    "plugins": {
+      "cordova-plugin-whitelist": {}
+    },
+    "platforms": [
+      "android"
+    ]
+  }
 }
